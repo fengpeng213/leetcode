@@ -6,7 +6,7 @@
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 var rotate = function(nums, k) {
-  let rArr = nums.splice(nums.length - k);
+  const rArr = nums.splice(nums.length - k);
   nums.splice(0, 0, ...rArr);
   // return nums
 };
